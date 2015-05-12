@@ -1,22 +1,57 @@
-@import "../less/bootstrap-3.3.4/bootstrap.less";
 @import "../less/variables.less";
+@import "../less/bootstrap-3.3.4/bootstrap.less";
 
-body{
-  font-family: "Helvetica";
-  text-align: center;
-  padding: 50px 20px 0;
-  background: #f4f4f7;
-  color: #444;
-  margin: 0;
+body.i18n-en-active {
+  .i18n-pl {
+    display: none;
+  }
 }
 
-h1{
-  font-size: 65px;
-  line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
-  padding: 20px 0;
+body.i18n-pl-active {
+  .i18n-en {
+    display: none;
+  }
 }
 
-h3{
-  font-weight: 300;
+.splash-container {
+  background-color: #292929;
+
+  > div.call-to-action {
+    max-width: 640px;
+    padding: 10px;
+    background-color: #333;
+
+    > .btn-container {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.splash-text {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  > div.title {
+    > span {
+      padding: 3px;
+      font-size: @font-size-h2;
+      color: @brand-secondary;
+      background-color: rgba(0,0,0,0.7);
+      margin-bottom: 8px;
+    }
+  }
+
+}
+
+.main-contents {
+  max-width: 640px;
+
+  background-color: #352818;
+
+  .row.action-row {
+    background-color: #31323C;
+    color: #FFF;
+  }
 }

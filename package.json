@@ -1,0 +1,10 @@
+{
+  "name": "site-generator",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "compile": "harp compile public dist",
+    "server": "harp server public --port 9000"
+  }
+}
+

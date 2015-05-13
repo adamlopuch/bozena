@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= showPl ? 'en' : 'pl' %>">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Help Us</title>
+    <title>Petycja Nie Pelnosprawnych</title>
     <link rel="stylesheet" href="/main.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
-    <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <meta property="og:image" content="http://petycjaniepelnosprawnych.pl/splash.jpg"/>
+    <meta property="og:title" content="<%= ogTitle %>"/>
+    <meta property="og:url" content="http://petycjaniepelnosprawnych.pl<% showPl ? '' : '/en' %>"/>
+    <meta property="og:site_name" content="Petycja Nie Pelnosprawnych"/>
+
   </head>
   <body class="i18n-en-active">
     <%- yield %>

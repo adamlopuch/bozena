@@ -1,0 +1,178 @@
+<div class="splash-container" style="">
+  <img src="/splash.jpg" class="img-responsive center-block">
+
+  <div class="call-to-action center-block">
+    <div class="text-center">
+      <%= splashSubtitle %>
+    </div>
+
+    <div class="btn-container text-center">
+      <div id="btn-sign-it" class="btn btn-primary">
+        <i class="fa fa-wheelchair"></i> <%= signIt %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="splash-text">
+  <div class="title">
+    <% splashText.forEach(function(line) { %>
+      <span><%=line %></span><br>
+    <% }); %>
+  </div>
+</div>
+
+<div id="language" class="text-muted text-right">
+  <% if (showPl) { %>
+    <a href="/"><img src="/flag_pl.svg" alt="View in Polish" width="24px" height="15px"> Polski</a>
+  <% } else { %>
+    <a href="/en"><img src="/flag_us.svg" alt="View in English" width="28px" height="15px"> English</a>
+  <% } %>
+</div>
+
+<div class="main-contents center-block">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1> <i class="fa fa-building-o"></i> </h1>
+        <h1> <%= actHead %> </h1>
+        <h3> <%= actSubhead %> </h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <blockquote>
+          <%= actBlockquote %>
+          <p class="text-primary">
+            <i class="fa fa-heart"></i>
+          </p>
+        </blockquote>
+      </div>
+      <div class="col-sm-8">
+        <%- actText.map(function(t) { return '<p>' + t + '</p>'; }).join('\n') %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1> <i class="fa fa-wheelchair"></i> </h1>
+        <h1> <%= burdenHead %> </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <%- actText.map(function(t) { return '<p>' + t + '</p>'; }).join('\n') %>
+      </div>
+
+      <div class="col-sm-4">
+        <blockquote class="blockquote-reverse">
+          <%= burdenBlockquote %>
+          <p class="text-primary">
+            <i class="fa fa-heart"></i>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div id="sign" class="row action-row">
+      <div class="col-sm-12 text-center">
+        <h1> <i class="fa fa-pencil-square-o"></i> </h1>
+        <h1> <%= signHead %> </h1>
+      </div>
+    </div>
+
+    <div class="row action-row">
+      <div class="col-sm-4">
+        <p><a href="Petycja_Niepelnosprawni.pdf">  <i class="fa fa-file-pdf-o"></i> <%=downloadPdfPl %></a></p>
+        <p><a href="Petition_for_the_Disabled.pdf"<i class="fa fa-file-pdf-o"></i> <%=downloadPdfEn %></a></p>
+        <p><a id="esign-link" href="#"><i class="fa fa-globe"></i> <%=signElectronically %></a></p>
+
+        <div class="hidden-xs">
+          <p><%= helpUs1 %></p>
+
+          <p><%= helpUs2 %>
+            <div>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <p>
+          <%= signText1 %>
+        </p>
+
+        <p>
+          <%= signText2 %>
+          <blockquote>
+            <div class="bq-header-i"><i class="fa fa-envelope-o"></i></div>
+            Halina and Stanisław Łopuch<br>
+            ul. Biwakowa 10 <br>
+            52-244 Wroclaw <br>
+          </blockquote>
+        </p>
+
+        <p>
+          <%= signText3 %>
+          <blockquote>
+            <div class="bq-header-i"><i class="fa fa-envelope-o"></i></div>
+             Kacelaria Prezydenta RP<br/>
+             ul. Wiejska 10<br/>
+             00-902 Warszawa<br/>
+             Polska
+          </blockquote>
+        </p>
+
+        <p>
+          <%= signText4 %>
+        </p>
+        <p class="text-center">
+          <button id="btn-esign" class="btn btn-primary">
+            <i class="fa fa-wheelchair"></i> <%= signElectronically %>
+          </button>
+        </p>
+
+        <div class="visible-xs blockquote" style="margin-top: 30px;">
+          <p><%= helpUs1 %></p>
+
+          <p><%= helpUs2 %>
+            <div>
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <p style="margin-top: 100px; margin-bottom: 80px;">
+          <%= thankYou %>
+        </p>
+        <p class="text-muted">
+          Photo by <a href="https://www.flickr.com/photos/magdalenaroeseler/14794881647">Magdalena Roeseler</a> (c) CC BY 2.0.  Site made with <i class="fa fa-heart text-primary"></i> for Bozena by family.
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div id="esign_modal" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        &nbsp;
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body text-center">
+        <iframe src="https://docs.google.com/forms/d/1O6IWAkytU-nKoKmVKKWb2CrS0C0HJ3lxnWVYDAAMdSQ/viewform?embedded=true" width="600" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
+    </div>
+  </div>
+</div>

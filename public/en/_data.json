@@ -1,0 +1,43 @@
+{
+  "index": {
+    "showPl": true,
+
+    "splashSubtitle": "Sign the petition to support the rights of people with disabilities.",
+    "signIt": "Sign It",
+    "splashText": [
+      "how can you travel",
+      "across the country,",
+      "when a staircase",
+      "has become",
+      "a mountain"
+    ],
+
+    "actHead": "The Parliamentary Act of October 23, 2013",
+    "actSubhead": "(Dz. U. Pos. 1446 and 2014 pos. 486)",
+    "actBlockquote": "We petition for a specific correction of the Act because the current law is unjust to those most in need",
+    "actText": [
+      "The Act in question refers to the obligation to apply for a new parking card from July 1st 2015 for people with disabilities. The principle of this law is noble and necessary. However, as currently written, the provision requires the person with disabilities to submit a proposal for a new parking card in person at his or her place of permanent residence.",
+      "The writers of this law did not recognize that this provision is simply not realistic for a great many persons with disabilities. <span class='text-secondary'> Those with significantly limited mobility, especially those staying under the care of family or a third party in a place other than their permanent residence, are unable to meet the burden of applying for a parking card in their place of permanent residence.</span>"
+    ],
+
+    "burdenHead": "An Undue Burden",
+    "burdenBlockquote": "Thank you for your support for the rights of people with disabilities",
+    "burdenText": [
+      "Administrative requirement that the person with strongly reduced mobility endure a long journey, sometimes on the other end of Poland, only to personally apply for a disabled parking card is not practical or just. While this law was surely written to protect people with disabilities, we believe it does harm unto them.",
+      "<span class='text-secondary'>We believe the result will be that people with disabilities will have less access to the parking cards they need, not more.</span>"
+    ],
+
+    "signHead": "Sign the Petition!",
+    "downloadPdfPl": "Download PDF (Polski)",
+    "downloadPdfEn": "Download PDF (English)",
+    "signElectronically": "Sign Electronically",
+    "helpUs1": "Help us in publicizing this critical cause! Please turn to family members, friends, and coworkers to support this petition.",
+    "helpUs2": "Share this petition on Facebook and Twitter",
+    "signText1": "When we receive our first hundred signatures, we will collectively send the petitions to the Office of the President to represent the collective weight of this group.",
+    "signText2": "Download the petition and send a signed petition to our address:",
+    "signText3": "Alternatively, send a signed, printed petition directly to the President:",
+    "signText4": "Or, sign the petition electronically:",
+
+    "thankYou": "Thank you in advance for your understanding and your contribution to this movement."
+  }
+}

@@ -90,7 +90,7 @@
 
     <div class="row">
       <div class="col-sm-8">
-        <%- actText.map(function(t) { return '<p>' + t + '</p>'; }).join('\n') %>
+        <%- burdenText.map(function(t) { return '<p>' + t + '</p>'; }).join('\n') %>
       </div>
 
       <div class="col-sm-4">
@@ -113,7 +113,7 @@
     <div class="row action-row">
       <div class="col-sm-4">
         <p><a href="/Petycja_Niepelnosprawni.pdf">  <i class="fa fa-file-pdf-o"></i> <%=downloadPdfPl %></a></p>
-        <p><a href="/Petition_for_the_Disabled.pdf"<i class="fa fa-file-pdf-o"></i> <%=downloadPdfEn %></a></p>
+        <p><a href="/Petition_for_the_Disabled.pdf"><i class="fa fa-file-pdf-o"></i> <%=downloadPdfEn %></a></p>
         <p><a id="esign-link" href="#"><i class="fa fa-globe"></i> <%=signElectronically %></a></p>
 
         <div class="hidden-xs">
@@ -147,7 +147,7 @@
           <%= signText3 %>
           <blockquote>
             <div class="bq-header-i"><i class="fa fa-envelope-o"></i></div>
-             Kacelaria Prezydenta RP<br/>
+             Kancelaria Prezydenta RP<br/>
              ul. Wiejska 10<br/>
              00-902 Warszawa<br/>
              Polska
@@ -218,6 +218,6 @@
   </div>
 </div>
 
-    <%- partial('_partials/scripts') %>
+    <%- partial('./scripts') %>
   </body>
 </html>

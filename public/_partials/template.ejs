@@ -182,7 +182,18 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body text-center">
-        <iframe src="https://docs.google.com/forms/d/1O6IWAkytU-nKoKmVKKWb2CrS0C0HJ3lxnWVYDAAMdSQ/viewform?embedded=true" width="600" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <%
+          var formURL_PL = "https://docs.google.com/forms/d/1WAAmJQwoOSFCA8PRZ7_LkoLs5j4_woy36c4SgfuxgN0/viewform?hl=pl&embedded=true";
+          var formURL_EN = "https://docs.google.com/forms/d/1O6IWAkytU-nKoKmVKKWb2CrS0C0HJ3lxnWVYDAAMdSQ/viewform?hl=en&embedded=true";
+          var formURL_to_use;
+          if (showPl==false) {      // if on PL site, then 'showPl' is FALSE; if on EN site, then 'showPl' is TRUE
+            formURL_to_use = formURL_PL;
+          }
+          else {
+            formURL_to_use = formURL_EN;
+          }
+        %>
+        <iframe src="<%- formURL_to_use %>" width="600" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </div>
     </div>
   </div>

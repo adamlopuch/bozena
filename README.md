@@ -1,4 +1,4 @@
-# Petycja Nie Pelnosprawnych
+# Petycja Niepelnosprawnych
 
 http://petycjaniepelnosprawnych.pl
 

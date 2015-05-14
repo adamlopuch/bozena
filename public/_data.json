@@ -1,6 +1,11 @@
 {
   "index": {
-    "ogTitle": "Przyłącz się do Petycji w obronie Praw Osób Niepełnosprawnych",
+    "htmlLang":"pl",
+    "headTitle": "Petycja Niepelnosprawnych",
+    "og_image": "http://petycjaniepelnosprawnych.pl/splash.jpg",
+    "og_title": "Przyłącz się do Petycji w obronie Praw Osób Niepełnosprawnych",
+    "og_url": "http://petycjaniepelnosprawnych.pl",
+    "og_site_name": "Petycja Niepelnosprawnych",
 
     "showPl": false,
 

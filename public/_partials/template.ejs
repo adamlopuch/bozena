@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="<%= htmlLang %>">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= headTitle %></title>
+    <link rel="stylesheet" href="/main.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+
+    <meta property="og:image" content="<%= og_image %>"/>
+    <meta property="og:title" content="<%= og_title %>"/>
+    <meta property="og:url" content="<%= og_url %>"/>
+    <meta property="og:site_name" content="<%= og_site_name %>"/>
+
+  </head>
+  <body>
+
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -182,8 +201,23 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body text-center">
-        <iframe src="https://docs.google.com/forms/d/1O6IWAkytU-nKoKmVKKWb2CrS0C0HJ3lxnWVYDAAMdSQ/viewform?embedded=true" width="600" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <%
+          var formURL_PL = "https://docs.google.com/forms/d/1WAAmJQwoOSFCA8PRZ7_LkoLs5j4_woy36c4SgfuxgN0/viewform?hl=pl&embedded=true";
+          var formURL_EN = "https://docs.google.com/forms/d/1O6IWAkytU-nKoKmVKKWb2CrS0C0HJ3lxnWVYDAAMdSQ/viewform?hl=en&embedded=true";
+          var formURL_to_use;
+          if (showPl==false) {      // if on PL site, then 'showPl' is FALSE; if on EN site, then 'showPl' is TRUE
+            formURL_to_use = formURL_PL;
+          }
+          else {
+            formURL_to_use = formURL_EN;
+          }
+        %>
+        <iframe src="<%- formURL_to_use %>" width="600" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </div>
     </div>
   </div>
 </div>
+
+    <%- partial('_partials/scripts') %>
+  </body>
+</html>

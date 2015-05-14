@@ -1,7 +1,11 @@
 {
   "index": {
-    "ogTitle": "Sign the petition to support the rights of people with disabilities.",
-
+    "htmlLang":"en",
+    "headTitle": "Petition for the Disabled",
+    "og_image": "http://petycjaniepelnosprawnych.pl/splash.jpg",
+    "og_title": "Sign the petition to support the rights of people with disabilities.",
+    "og_url": "http://petycjaniepelnosprawnych.pl",
+    "og_site_name": "Petition for the Disabled",
 
     "showPl": true,
 

@@ -39,6 +39,14 @@
         <i class="fa fa-wheelchair"></i> <%= signIt %>
       </div>
     </div>
+
+    <div id="language" class="text-muted text-right">
+      <% if (showPl) { %>
+        <a href="/"><img src="/PL.png" alt="View in Polish"> Polski</a>
+      <% } else { %>
+        <a href="/en"><img src="/US.png" alt="View in English"> English</a>
+      <% } %>
+    </div>
   </div>
 </div>
 <div class="splash-text">
@@ -47,14 +55,6 @@
       <span><%=line %></span><br>
     <% }); %>
   </div>
-</div>
-
-<div id="language" class="text-muted text-right">
-  <% if (showPl) { %>
-    <a href="/"><img src="/flag_pl.svg" alt="View in Polish" width="24px" height="15px"> Polski</a>
-  <% } else { %>
-    <a href="/en"><img src="/flag_us.svg" alt="View in English" width="28px" height="15px"> English</a>
-  <% } %>
 </div>
 
 <div class="main-contents center-block">
@@ -137,9 +137,9 @@
           <%= signText2 %>
           <blockquote>
             <div class="bq-header-i"><i class="fa fa-envelope-o"></i></div>
-            Halina and Stanisław Łopuch<br>
-            ul. Biwakowa 10 <br>
-            52-244 Wroclaw <br>
+            <% address.forEach(function(line) { %>
+              <%= line %><br>
+            <% }); %>
           </blockquote>
         </p>
 
@@ -147,15 +147,14 @@
           <%= signText3 %>
           <blockquote>
             <div class="bq-header-i"><i class="fa fa-envelope-o"></i></div>
-             Kancelaria Prezydenta RP<br/>
-             ul. Wiejska 10<br/>
-             00-902 Warszawa<br/>
-             Polska
+            <% addressPresident.forEach(function(line) { %>
+              <%= line %><br>
+            <% }); %>
           </blockquote>
         </p>
 
-        <p>
-          <%= signText4 %>
+        <p class="larger-text">
+          <strong><%= signText4 %></strong>
         </p>
         <p class="text-center">
           <button id="btn-esign" class="btn btn-primary">

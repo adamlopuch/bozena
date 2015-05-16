@@ -12,10 +12,9 @@
     "splashSubtitle": "Przyłącz się do Petycji w obronie Praw Osób Niepełnosprawnych",
     "signIt": "Podpisz to",
     "splashText": [
-      "Jak możesz podróżować",
-      "przez Kraj,",
-      "gdy schody",
-      "stają się Górą?"
+      "Jak możesz isć przez Kraj,",
+      "gdy małe schodki",
+      "stają się Wielką Górą ?"
     ],
 
     "actHead": "Petycja do poprawy Ustawy Sejmowej",
@@ -43,6 +42,18 @@
     "signText2": "Pobierz plik z Petycją i wyslij podpisany na nasz adres:",
     "signText3": "Jeżeli wolisz, wyslij wydrukowaną i podpisaną Petycję bezposrednio do Prezydenta na adres:",
     "signText4": "Lub też podpisz Petycje Elektronicznie - my to wydrukujemy i przeslemy Pocztą Poleceną na biurko Prezydenta",
+
+    "address": [
+      "Halina i Stanisław Łopuch",
+      "ul. Biwakowa 10",
+      "52-244 Wroclaw"
+    ],
+
+    "addressPresident": [
+      "Kancelaria Prezydenta RP",
+      "ul. Wiejska 10",
+      "00-902 Warszawa"
+    ],
 
     "thankYou": "Dziękujemy za Wasze wsparcie praw Osób Niepełnosprawnych"
   }

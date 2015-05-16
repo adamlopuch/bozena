@@ -1,18 +1,6 @@
 @import "../less/variables.less";
 @import "../less/bootstrap-3.3.4/bootstrap.less";
 
-body.i18n-en-active {
-  .i18n-pl {
-    display: none;
-  }
-}
-
-body.i18n-pl-active {
-  .i18n-en {
-    display: none;
-  }
-}
-
 .splash-container {
   background-color: #292929;
 
@@ -39,7 +27,7 @@ body.i18n-pl-active {
       font-size: @font-size-h2;
       color: @brand-secondary;
       background-color: rgba(0,0,0,0.7);
-      margin-bottom: 8px;
+      margin-bottom: 0.5em;
     }
   }
 
@@ -56,6 +44,10 @@ body.i18n-pl-active {
   }
 }
 
+p.larger-text {
+  font-size: @font-size-large;
+}
+
 .bq-header-i {
   margin-left: -10px;
   margin-top: -18px;
@@ -65,11 +57,3 @@ body.i18n-pl-active {
 .text-muted {
   font-size: 10px;
 }
-
-#language {
-  position: absolute;
-  left: 5px;
-  top: 5px;
-
-}
-

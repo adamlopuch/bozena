@@ -1,3 +1,7 @@
+# Something with sharing Adam's Google Drive folder creates a lot of desktop.ini's
+desktop.ini
+*/desktop.ini
+
 # Logs
 logs
 *.log
